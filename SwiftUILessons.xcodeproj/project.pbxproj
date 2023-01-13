@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		756ACCCC29715F5700688FA7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCB29715F5700688FA7 /* UserCell.swift */; };
+		756ACCCE297160F700688FA7 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCD297160F700688FA7 /* UserList.swift */; };
+		756ACCD0297163D400688FA7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCF297163D400688FA7 /* CircleImage.swift */; };
+		756ACCD3297164A500688FA7 /* CircleShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCD2297164A500688FA7 /* CircleShadow.swift */; };
+		756ACCD5297165F700688FA7 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCD4297165F700688FA7 /* RecordCell.swift */; };
 		758DBBA2296EC895006CEF43 /* SwiftUILessonsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758DBBA1296EC895006CEF43 /* SwiftUILessonsApp.swift */; };
 		758DBBA4296EC895006CEF43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758DBBA3296EC895006CEF43 /* ContentView.swift */; };
 		758DBBA6296EC897006CEF43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758DBBA5296EC897006CEF43 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		756ACCCB29715F5700688FA7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		756ACCCD297160F700688FA7 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		756ACCCF297163D400688FA7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		756ACCD2297164A500688FA7 /* CircleShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleShadow.swift; sourceTree = "<group>"; };
+		756ACCD4297165F700688FA7 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		758DBB9E296EC895006CEF43 /* SwiftUILessons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILessons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758DBBA1296EC895006CEF43 /* SwiftUILessonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILessonsApp.swift; sourceTree = "<group>"; };
 		758DBBA3296EC895006CEF43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		756ACCCA29715F2E00688FA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				756ACCCB29715F5700688FA7 /* UserCell.swift */,
+				756ACCCD297160F700688FA7 /* UserList.swift */,
+				756ACCCF297163D400688FA7 /* CircleImage.swift */,
+				756ACCD4297165F700688FA7 /* RecordCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		756ACCD12971649000688FA7 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				756ACCD2297164A500688FA7 /* CircleShadow.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		758DBB95296EC895006CEF43 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +80,8 @@
 		758DBBA0296EC895006CEF43 /* SwiftUILessons */ = {
 			isa = PBXGroup;
 			children = (
+				756ACCD12971649000688FA7 /* Modifiers */,
+				756ACCCA29715F2E00688FA7 /* Views */,
 				758DBBA1296EC895006CEF43 /* SwiftUILessonsApp.swift */,
 				758DBBA3296EC895006CEF43 /* ContentView.swift */,
 				758DBBA5296EC897006CEF43 /* Assets.xcassets */,
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756ACCCE297160F700688FA7 /* UserList.swift in Sources */,
+				756ACCD3297164A500688FA7 /* CircleShadow.swift in Sources */,
 				758DBBA4296EC895006CEF43 /* ContentView.swift in Sources */,
+				756ACCD5297165F700688FA7 /* RecordCell.swift in Sources */,
 				758DBBA2296EC895006CEF43 /* SwiftUILessonsApp.swift in Sources */,
+				756ACCCC29715F5700688FA7 /* UserCell.swift in Sources */,
+				756ACCD0297163D400688FA7 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
