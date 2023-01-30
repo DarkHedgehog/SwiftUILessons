@@ -16,6 +16,7 @@
 		756272242983F21B0086C0A9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272232983F21B0086C0A9 /* Group.swift */; };
 		756272282987C1D70086C0A9 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272272987C1D70086C0A9 /* NewsFeed.swift */; };
 		7562722A2987C2060086C0A9 /* GroupsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272292987C2060086C0A9 /* GroupsList.swift */; };
+		7562722D2987C5DB0086C0A9 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 7562722C2987C5DB0086C0A9 /* ASCollectionView */; };
 		756ACCCC29715F5700688FA7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCB29715F5700688FA7 /* UserCell.swift */; };
 		756ACCCE297160F700688FA7 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCD297160F700688FA7 /* UserList.swift */; };
 		756ACCD0297163D400688FA7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCF297163D400688FA7 /* CircleImage.swift */; };
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7562722D2987C5DB0086C0A9 /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +199,9 @@
 			dependencies = (
 			);
 			name = SwiftUILessons;
+			packageProductDependencies = (
+				7562722C2987C5DB0086C0A9 /* ASCollectionView */,
+			);
 			productName = SwiftUILessons;
 			productReference = 758DBB9E296EC895006CEF43 /* SwiftUILessons.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +230,9 @@
 				Base,
 			);
 			mainGroup = 758DBB95296EC895006CEF43;
+			packageReferences = (
+				7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+			);
 			productRefGroup = 758DBB9F296EC895006CEF43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -467,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7562722C2987C5DB0086C0A9 /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 758DBB96296EC895006CEF43 /* Project object */;
 }
