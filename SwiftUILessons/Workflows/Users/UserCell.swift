@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct UserCell: View {
-    var name: String
+    var user: User
     var body: some View {
         HStack {
             CircleImage(name: "user", diameter: 80)
-            Text(name)
+            Text(user.fullname)
         }
     }
 }
 
 struct UserCell_Previews: PreviewProvider {
     static var previews: some View {
-        UserCell(name: "Иван Иванович")
+        UserCell(user: User(id: 0, firstName: "Тест", lastName: "Тестович"))
     }
 }
