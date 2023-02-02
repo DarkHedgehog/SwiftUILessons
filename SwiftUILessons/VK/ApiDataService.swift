@@ -246,10 +246,10 @@ final class ApiDataService {
         urlComponents.path = method.endPoint
         var queryItems = params
 
-        if queryItems.first(where: {$0.name == "v"}) == nil {
+        if queryItems.first(where: { $0.name == "v" }) == nil {
             queryItems.append(URLQueryItem(name: "v", value: "5.81"))
         }
-        if queryItems.first(where: {$0.name == "access_token"}) == nil {
+        if queryItems.first(where: { $0.name == "access_token" }) == nil {
             queryItems.append(URLQueryItem(name: "access_token", value: Session.instance.token))
         }
 
@@ -281,7 +281,7 @@ final class ApiDataService {
                 let items = responseObject["items"].arrayValue
 
                 if !items.isEmpty,
-                   let xSizeImage = items[0]["sizes"].arrayValue.first(where: {$0["type"] == "x"}) {
+                   let xSizeImage = items[0]["sizes"].arrayValue.first(where: { $0["type"] == "x" }) {
                     let imageURL = xSizeImage["url"].stringValue
                     completion(imageURL)
                     return

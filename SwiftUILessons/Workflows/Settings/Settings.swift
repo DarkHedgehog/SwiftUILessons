@@ -10,7 +10,7 @@ import SwiftUI
 struct Settings: View {
     @Binding var isUserLoggedIn: Bool
 
-    @State var isConfirmationLogout: Bool = false
+    @State var isConfirmationLogout = false
     var body: some View {
         ScrollView(.vertical) {
             VStack {

@@ -17,4 +17,3 @@ struct User: Identifiable {
     var firstName: String
     var lastName: String
 }
-

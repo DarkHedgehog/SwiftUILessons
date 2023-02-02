@@ -31,9 +31,3 @@ struct UserList: View {
         .onAppear(perform: viewModel.fetch)
     }
 }
-
-//struct UserList_Previews: PreviewProvider {
-//    static var previews: some View {
-//        UserList()
-//    }
-//}

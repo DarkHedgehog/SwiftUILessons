@@ -15,23 +15,24 @@ struct UserDetailView: View {
         VStack {
             Text(user.firstName)
             Text(user.lastName)
-            ASCollectionView(data: data) { (photo, context) in                 VStack {
-                Text(photo.text)
-                AsyncImage(url: URL(string: photo.imageURL)) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    ProgressView()
+            ASCollectionView(data: data) { photo, _ in
+                VStack {
+                    Text(photo.text)
+                    AsyncImage(url: URL(string: photo.imageURL)) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: 150, height: 150)
+                    .background(Color.gray)
+                    .cornerRadius(5)
                 }
-                .frame(width: 150, height: 150)
-                .background(Color.gray)
-                .cornerRadius(5)
-            }
-
             }.layout {
                 .grid(
-                    layoutMode: .fixedNumberOfColumns(2), itemSpacing: 0,
+                    layoutMode: .fixedNumberOfColumns(2),
+                    itemSpacing: 0,
                     lineSpacing: 16)
             }
         }

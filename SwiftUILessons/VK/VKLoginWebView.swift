@@ -8,7 +8,6 @@ import SwiftUI
 import WebKit
 
 struct VKLoginWebView: UIViewRepresentable {
-
     fileprivate let navigationDelegate = WebViewNavigationDelegate()
 
     func makeUIView(context: Context) -> WKWebView {
@@ -42,7 +41,6 @@ struct VKLoginWebView: UIViewRepresentable {
 }
 
 class WebViewNavigationDelegate: NSObject, WKNavigationDelegate {
-
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         guard let url = navigationResponse.response.url,
               url.path == "/blank.html",
