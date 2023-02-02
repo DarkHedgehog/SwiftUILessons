@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7562721329829E980086C0A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562721229829E980086C0A9 /* LoginView.swift */; };
+		756272152982A3B90086C0A9 /* WorkflowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272142982A3B90086C0A9 /* WorkflowsView.swift */; };
+		756272192982A6B70086C0A9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272182982A6B70086C0A9 /* UserDetailView.swift */; };
+		7562721C2983BF530086C0A9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562721B2983BF530086C0A9 /* User.swift */; };
+		7562721F2983E71D0086C0A9 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562721E2983E71D0086C0A9 /* Users.swift */; };
+		756272222983EE540086C0A9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272212983EE540086C0A9 /* Settings.swift */; };
+		756272242983F21B0086C0A9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272232983F21B0086C0A9 /* Group.swift */; };
+		756272282987C1D70086C0A9 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272272987C1D70086C0A9 /* NewsFeed.swift */; };
+		7562722A2987C2060086C0A9 /* GroupsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272292987C2060086C0A9 /* GroupsList.swift */; };
+		7562722D2987C5DB0086C0A9 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 7562722C2987C5DB0086C0A9 /* ASCollectionView */; };
+		7562722F2987CD8E0086C0A9 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562722E2987CD8E0086C0A9 /* Photos.swift */; };
 		756ACCCC29715F5700688FA7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCB29715F5700688FA7 /* UserCell.swift */; };
 		756ACCCE297160F700688FA7 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCD297160F700688FA7 /* UserList.swift */; };
 		756ACCD0297163D400688FA7 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756ACCCF297163D400688FA7 /* CircleImage.swift */; };
@@ -19,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7562721229829E980086C0A9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		756272142982A3B90086C0A9 /* WorkflowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsView.swift; sourceTree = "<group>"; };
+		756272182982A6B70086C0A9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		7562721B2983BF530086C0A9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7562721E2983E71D0086C0A9 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		756272212983EE540086C0A9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		756272232983F21B0086C0A9 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		756272272987C1D70086C0A9 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		756272292987C2060086C0A9 /* GroupsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsList.swift; sourceTree = "<group>"; };
+		7562722E2987CD8E0086C0A9 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		756ACCCB29715F5700688FA7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		756ACCCD297160F700688FA7 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		756ACCCF297163D400688FA7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -36,17 +57,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7562722D2987C5DB0086C0A9 /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		756ACCCA29715F2E00688FA7 /* Views */ = {
+		756272162982A5F00086C0A9 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				756272262987C1BE0086C0A9 /* News */,
+				756272252987C19E0086C0A9 /* Groups */,
+				756272202983EE430086C0A9 /* Settings */,
+				756272172982A67F0086C0A9 /* Users */,
+				756272142982A3B90086C0A9 /* WorkflowsView.swift */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		756272172982A67F0086C0A9 /* Users */ = {
 			isa = PBXGroup;
 			children = (
 				756ACCCB29715F5700688FA7 /* UserCell.swift */,
 				756ACCCD297160F700688FA7 /* UserList.swift */,
+				756272182982A6B70086C0A9 /* UserDetailView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		7562721A2983BF450086C0A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				756272232983F21B0086C0A9 /* Group.swift */,
+				7562721B2983BF530086C0A9 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7562721D2983E7050086C0A9 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				7562721E2983E71D0086C0A9 /* Users.swift */,
+				7562722E2987CD8E0086C0A9 /* Photos.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		756272202983EE430086C0A9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				756272212983EE540086C0A9 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		756272252987C19E0086C0A9 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				756272292987C2060086C0A9 /* GroupsList.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		756272262987C1BE0086C0A9 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				756272272987C1D70086C0A9 /* NewsFeed.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		756ACCCA29715F2E00688FA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7562721229829E980086C0A9 /* LoginView.swift */,
 				756ACCCF297163D400688FA7 /* CircleImage.swift */,
 				756ACCD4297165F700688FA7 /* RecordCell.swift */,
 			);
@@ -80,6 +165,9 @@
 		758DBBA0296EC895006CEF43 /* SwiftUILessons */ = {
 			isa = PBXGroup;
 			children = (
+				7562721D2983E7050086C0A9 /* DataSources */,
+				7562721A2983BF450086C0A9 /* Models */,
+				756272162982A5F00086C0A9 /* Workflows */,
 				756ACCD12971649000688FA7 /* Modifiers */,
 				756ACCCA29715F2E00688FA7 /* Views */,
 				758DBBA1296EC895006CEF43 /* SwiftUILessonsApp.swift */,
@@ -114,6 +202,9 @@
 			dependencies = (
 			);
 			name = SwiftUILessons;
+			packageProductDependencies = (
+				7562722C2987C5DB0086C0A9 /* ASCollectionView */,
+			);
 			productName = SwiftUILessons;
 			productReference = 758DBB9E296EC895006CEF43 /* SwiftUILessons.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 758DBB95296EC895006CEF43;
+			packageReferences = (
+				7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+			);
 			productRefGroup = 758DBB9F296EC895006CEF43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,12 +263,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				756ACCCE297160F700688FA7 /* UserList.swift in Sources */,
+				756272152982A3B90086C0A9 /* WorkflowsView.swift in Sources */,
+				756272222983EE540086C0A9 /* Settings.swift in Sources */,
+				756272282987C1D70086C0A9 /* NewsFeed.swift in Sources */,
 				756ACCD3297164A500688FA7 /* CircleShadow.swift in Sources */,
 				758DBBA4296EC895006CEF43 /* ContentView.swift in Sources */,
+				7562721F2983E71D0086C0A9 /* Users.swift in Sources */,
+				7562722A2987C2060086C0A9 /* GroupsList.swift in Sources */,
 				756ACCD5297165F700688FA7 /* RecordCell.swift in Sources */,
+				756272242983F21B0086C0A9 /* Group.swift in Sources */,
 				758DBBA2296EC895006CEF43 /* SwiftUILessonsApp.swift in Sources */,
 				756ACCCC29715F5700688FA7 /* UserCell.swift in Sources */,
+				7562722F2987CD8E0086C0A9 /* Photos.swift in Sources */,
+				7562721329829E980086C0A9 /* LoginView.swift in Sources */,
+				756272192982A6B70086C0A9 /* UserDetailView.swift in Sources */,
 				756ACCD0297163D400688FA7 /* CircleImage.swift in Sources */,
+				7562721C2983BF530086C0A9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +479,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7562722C2987C5DB0086C0A9 /* ASCollectionView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */;
+			productName = ASCollectionView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 758DBB96296EC895006CEF43 /* Project object */;
 }

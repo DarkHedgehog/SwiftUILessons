@@ -8,38 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var login = ""
-    @State private var password = ""
-
+    
+    @State private var isUserLoggedIn: Bool = false
+    
     var body: some View {
-        ZStack {
-            Image("back")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-                .scaledToFill()
-            VStack {
-                Image("world")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
-                TextField("Login", text: $login)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(maxWidth: 250)
-                SecureField("Password:", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .frame(maxWidth: 250)
-                Button(action: loginAction) {
-                    Text("Log in")
-                        .padding()
-                        .frame(width: 250, height: 50, alignment: .center)
-                }
-            }
+        
+        if isUserLoggedIn {
+            WorkflowsView(isUserLoggedIn: $isUserLoggedIn)
+        } else {
+            LoginView(isUserLoggedIn: $isUserLoggedIn)
         }
     }
-
-    private func loginAction() {
-        print("\(login) logged in")
-    }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
