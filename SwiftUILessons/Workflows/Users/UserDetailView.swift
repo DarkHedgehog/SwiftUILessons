@@ -10,7 +10,7 @@ import ASCollectionView
 
 struct UserDetailView: View {
     var user: User
-    @State var data = PhotosDataSource
+    @State var data = photosDataSource
     var body: some View {
         VStack {
             Text(user.firstName)
@@ -40,6 +40,6 @@ struct UserDetailView: View {
 
 struct UserDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        UserDetailView(user: UsersDataSource[0])
+        UserDetailView(user: usersDataSource[0])
     }
 }

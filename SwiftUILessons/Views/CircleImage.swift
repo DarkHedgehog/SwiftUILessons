@@ -13,7 +13,7 @@ struct CircleImage: View {
     var body: some View {
         Image("user")
             .frame(width: diameter, height: diameter)
-            .cornerRadius(diameter/2)
+            .cornerRadius(diameter / 2)
             .modifier(CircleShadow(shadowColor: .gray, shadowRadius: 5))
     }
 }

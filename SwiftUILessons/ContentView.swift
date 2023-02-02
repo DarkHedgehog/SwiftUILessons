@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var isUserLoggedIn: Bool = false
+    @State private var isUserLoggedIn = false
     private var publisher = Session.instance.loginPublesher()            .receive(on: RunLoop.main)
-
 
     var body: some View {
         if isUserLoggedIn {
@@ -24,8 +22,6 @@ struct ContentView: View {
                 }
         }
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -15,7 +15,8 @@ struct WorkflowsView: View {
             NewsFeed().tabItem {
                 Label("News", systemImage: "newspaper.fill")
             }
-            UserList().tabItem {
+            UserList(viewModel: UsersViewModel())
+            .tabItem {
                 Label("Users", systemImage: "person.fill")
             }
             GroupsList().tabItem {

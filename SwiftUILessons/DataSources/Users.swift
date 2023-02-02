@@ -7,7 +7,7 @@
 
 import Foundation
 
-let UsersDataSource = [
+let usersDataSource = [
     User(id: 0, firstName: "Иван", lastName: "Иванвич"),
     User(id: 1, firstName: "Петр", lastName: "Петрович"),
     User(id: 2, firstName: "Сидр", lastName: "Сидорович")

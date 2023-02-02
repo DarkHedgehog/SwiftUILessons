@@ -8,26 +8,32 @@
 import SwiftUI
 
 struct UserList: View {
-    var data = UsersDataSource
+    @ObservedObject var viewModel: UsersViewModel
+
+    init(viewModel: UsersViewModel) {
+        self.viewModel = viewModel
+    }
+
     var body: some View {
         NavigationStack {
             List {
-                ForEach(data) { user in
-                    NavigationLink (destination: {
+                ForEach(viewModel.users) { user in
+                    NavigationLink(destination: {
                         UserDetailView(user: user)
                     }, label: {
-                        RecordCell{
+                        RecordCell {
                             UserCell(user: user)
                         }
                     })
                 }
             }
         }
+        .onAppear(perform: viewModel.fetch)
     }
 }
 
-struct UserList_Previews: PreviewProvider {
-    static var previews: some View {
-        UserList()
-    }
-}
+//struct UserList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserList()
+//    }
+//}
