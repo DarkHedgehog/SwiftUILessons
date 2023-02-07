@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "codingstylecased",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DarkHedgehog/CodingStyleCased.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d01b5c3b602b08a701db17a3a045d5726a84af66"
+      }
+    },
+    {
       "identity" : "differencekit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ra1028/DifferenceKit",

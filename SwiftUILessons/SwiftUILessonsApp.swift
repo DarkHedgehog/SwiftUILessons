@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import CodingStyleCased
 
 @main
-struct SwiftUILessonsApp: App {
+struct SwiftUILessonsApp: App {    
     var body: some Scene {
         WindowGroup {
             ContentView()

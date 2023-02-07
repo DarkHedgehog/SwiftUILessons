@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75057AE229900C56001740F5 /* CodingStyleCased in Frameworks */ = {isa = PBXBuildFile; productRef = 75057AE129900C56001740F5 /* CodingStyleCased */; };
 		7562721329829E980086C0A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562721229829E980086C0A9 /* LoginView.swift */; };
 		756272152982A3B90086C0A9 /* WorkflowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272142982A3B90086C0A9 /* WorkflowsView.swift */; };
 		756272192982A6B70086C0A9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272182982A6B70086C0A9 /* UserDetailView.swift */; };
@@ -56,6 +57,7 @@
 		7562727C298BD3BC0086C0A9 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7562727E298BD3D50086C0A9 /* UserPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		75627281298BF14E0086C0A9 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		756272D5298FEEFA0086C0A9 /* Wrappers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Wrappers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		756ACCCB29715F5700688FA7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		756ACCCD297160F700688FA7 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		756ACCCF297163D400688FA7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75627279298BD29F0086C0A9 /* SwiftyJSON in Frameworks */,
+				75057AE229900C56001740F5 /* CodingStyleCased in Frameworks */,
 				7562722D2987C5DB0086C0A9 /* ASCollectionView in Frameworks */,
 				75627276298BD24D0086C0A9 /* Alamofire in Frameworks */,
 			);
@@ -160,6 +163,20 @@
 			path = VK;
 			sourceTree = "<group>";
 		};
+		756272A4298FB8980086C0A9 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		756272A7298FB9720086C0A9 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
 		756ACCCA29715F2E00688FA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +214,9 @@
 		758DBBA0296EC895006CEF43 /* SwiftUILessons */ = {
 			isa = PBXGroup;
 			children = (
+				756272D5298FEEFA0086C0A9 /* Wrappers.playground */,
+				756272A7298FB9720086C0A9 /* Playgrounds */,
+				756272A4298FB8980086C0A9 /* Wrappers */,
 				7562726D298BA8010086C0A9 /* VK */,
 				7562721D2983E7050086C0A9 /* DataSources */,
 				7562721A2983BF450086C0A9 /* Models */,
@@ -240,6 +260,7 @@
 				7562722C2987C5DB0086C0A9 /* ASCollectionView */,
 				75627275298BD24D0086C0A9 /* Alamofire */,
 				75627278298BD29F0086C0A9 /* SwiftyJSON */,
+				75057AE129900C56001740F5 /* CodingStyleCased */,
 			);
 			productName = SwiftUILessons;
 			productReference = 758DBB9E296EC895006CEF43 /* SwiftUILessons.app */;
@@ -273,6 +294,7 @@
 				7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
 				75627274298BD24D0086C0A9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				75627277298BD29F0086C0A9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */,
 			);
 			productRefGroup = 758DBB9F296EC895006CEF43 /* Products */;
 			projectDirPath = "";
@@ -546,6 +568,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DarkHedgehog/CodingStyleCased.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
@@ -573,6 +603,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		75057AE129900C56001740F5 /* CodingStyleCased */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */;
+			productName = CodingStyleCased;
+		};
 		7562722C2987C5DB0086C0A9 /* ASCollectionView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */;
