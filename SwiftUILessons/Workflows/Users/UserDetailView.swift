@@ -20,6 +20,7 @@ struct UserDetailView: View {
                 VStack {
                     Text(post.text)
                     MultiplePhotosView(photosUrl: post.imageUrls)
+                    PostFootPanel(post: post)
                 }
             }.layout {
                 .grid(

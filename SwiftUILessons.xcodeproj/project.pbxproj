@@ -11,6 +11,8 @@
 		7528249929924C94005A5B75 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528249829924C94005A5B75 /* ProfileView.swift */; };
 		7528249C29925797005A5B75 /* BounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528249B29925797005A5B75 /* BounceAnimation.swift */; };
 		752824A82994DCE0005A5B75 /* MultiplePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */; };
+		752824AA2994E080005A5B75 /* PostFootPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824A92994E080005A5B75 /* PostFootPanel.swift */; };
+		752824AC2994E2AC005A5B75 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824AB2994E2AC005A5B75 /* Posts.swift */; };
 		7562721329829E980086C0A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562721229829E980086C0A9 /* LoginView.swift */; };
 		756272152982A3B90086C0A9 /* WorkflowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272142982A3B90086C0A9 /* WorkflowsView.swift */; };
 		756272192982A6B70086C0A9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272182982A6B70086C0A9 /* UserDetailView.swift */; };
@@ -46,6 +48,8 @@
 		7528249829924C94005A5B75 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		7528249B29925797005A5B75 /* BounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimation.swift; sourceTree = "<group>"; };
 		752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePhotosView.swift; sourceTree = "<group>"; };
+		752824A92994E080005A5B75 /* PostFootPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFootPanel.swift; sourceTree = "<group>"; };
+		752824AB2994E2AC005A5B75 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		7562721229829E980086C0A9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		756272142982A3B90086C0A9 /* WorkflowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsView.swift; sourceTree = "<group>"; };
 		756272182982A6B70086C0A9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			children = (
 				7562721E2983E71D0086C0A9 /* Users.swift */,
 				7562722E2987CD8E0086C0A9 /* Photos.swift */,
+				752824AB2994E2AC005A5B75 /* Posts.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				756ACCCF297163D400688FA7 /* CircleImage.swift */,
 				756ACCD4297165F700688FA7 /* RecordCell.swift */,
 				752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */,
+				752824A92994E080005A5B75 /* PostFootPanel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				752824A82994DCE0005A5B75 /* MultiplePhotosView.swift in Sources */,
 				756ACCD3297164A500688FA7 /* CircleShadow.swift in Sources */,
 				758DBBA4296EC895006CEF43 /* ContentView.swift in Sources */,
+				752824AA2994E080005A5B75 /* PostFootPanel.swift in Sources */,
 				7528249929924C94005A5B75 /* ProfileView.swift in Sources */,
 				7562721F2983E71D0086C0A9 /* Users.swift in Sources */,
 				7562722A2987C2060086C0A9 /* GroupsList.swift in Sources */,
@@ -382,6 +389,7 @@
 				756272242983F21B0086C0A9 /* Group.swift in Sources */,
 				7528249C29925797005A5B75 /* BounceAnimation.swift in Sources */,
 				75627271298BABCA0086C0A9 /* Session.swift in Sources */,
+				752824AC2994E2AC005A5B75 /* Posts.swift in Sources */,
 				7562727B298BD2E10086C0A9 /* VKApi.swift in Sources */,
 				75627282298BF14E0086C0A9 /* UsersViewModel.swift in Sources */,
 				75627273298BD1CC0086C0A9 /* ApiDataService.swift in Sources */,
