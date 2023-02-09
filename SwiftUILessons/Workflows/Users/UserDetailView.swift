@@ -10,30 +10,26 @@ import ASCollectionView
 
 struct UserDetailView: View {
     var user: User
+    @State var posts: [UserPost] = []
     @State var data = photosDataSource
     var body: some View {
         VStack {
             Text(user.firstName)
             Text(user.lastName)
-            ASCollectionView(data: data) { photo, _ in
+            ASCollectionView(data: posts) { post, _ in
                 VStack {
-                    Text(photo.text)
-                    AsyncImage(url: URL(string: photo.imageURL)) { image in
-                        image
-                            .resizable()
-                            .scaledToFill()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .frame(width: 150, height: 150)
-                    .background(Color.gray)
-                    .cornerRadius(5)
+                    Text(post.text)
+                    MultiplePhotosView(photosUrl: post.imageUrls)
                 }
             }.layout {
                 .grid(
-                    layoutMode: .fixedNumberOfColumns(2),
+                    layoutMode: .fixedNumberOfColumns(1),
                     itemSpacing: 0,
                     lineSpacing: 16)
+            }
+        }.onAppear() {
+            ApiDataService.instance.getFriendPosts(userId: user.id) { posts in
+                self.posts = posts ?? []
             }
         }
     }
