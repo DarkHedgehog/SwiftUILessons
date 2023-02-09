@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var isUserLoggedIn: Bool = false
-    
+    @State private var isUserLoggedIn = false
+    private var publisher = Session.instance.loginPublesher()            .receive(on: RunLoop.main)
+
     var body: some View {
-        
         if isUserLoggedIn {
             WorkflowsView(isUserLoggedIn: $isUserLoggedIn)
         } else {
-            LoginView(isUserLoggedIn: $isUserLoggedIn)
+            // LoginView(isUserLoggedIn: $isUserLoggedIn)
+            VKLoginWebView()
+                .onReceive(publisher) { _ in
+                    isUserLoggedIn = Session.instance.checkApiEnabled()
+                }
         }
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

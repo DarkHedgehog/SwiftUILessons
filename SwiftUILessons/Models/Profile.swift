@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct User: Identifiable {
+struct Profile {
     var id: Int
     var imageURL: String?
     var fullname: String {
@@ -16,4 +16,13 @@ struct User: Identifiable {
     }
     var firstName: String
     var lastName: String
+    var groupIds: [String] = []
+    var friendsIds: [Int] = []
+    var toAnyObject: Any {
+        return [
+            "id": id,
+            "name": fullname,
+            "groups": groupIds
+        ]
+    }
 }

@@ -13,7 +13,7 @@ struct LoginView: View {
     @State private var showIncorrentCredentialsWarning = false
     @State private var login = ""
     @State private var password = ""
-    
+
     var body: some View {
         ZStack {
             Image("back")
@@ -38,16 +38,16 @@ struct LoginView: View {
                 }
             }
         }
-        .alert(isPresented: $showIncorrentCredentialsWarning,
-               content: {
-            Alert(title: Text("Error"),
-                  message: Text("Incorrent Login/Password was entered"))
-        })
+        .alert(isPresented: $showIncorrentCredentialsWarning) {
+            Alert(
+                title: Text("Error"),
+                message: Text("Incorrent Login/Password was entered"))
+        }
     }
 
     private func loginAction() {
         print("\(login) logged in")
-        if login == "" && password == "" {
+        if login.isEmpty && password.isEmpty {
             isUserLoggedIn = true
         } else {
             showIncorrentCredentialsWarning = true
