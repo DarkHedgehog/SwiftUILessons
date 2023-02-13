@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct UserPost {
+struct UserPost: Identifiable {
     var id: Int
     var userId: Int
     var date: Int

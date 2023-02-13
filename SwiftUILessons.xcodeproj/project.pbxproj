@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75057AE229900C56001740F5 /* CodingStyleCased in Frameworks */ = {isa = PBXBuildFile; productRef = 75057AE129900C56001740F5 /* CodingStyleCased */; };
+		7528249929924C94005A5B75 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528249829924C94005A5B75 /* ProfileView.swift */; };
+		7528249C29925797005A5B75 /* BounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528249B29925797005A5B75 /* BounceAnimation.swift */; };
+		752824A82994DCE0005A5B75 /* MultiplePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */; };
+		752824AA2994E080005A5B75 /* PostFootPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824A92994E080005A5B75 /* PostFootPanel.swift */; };
+		752824AC2994E2AC005A5B75 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824AB2994E2AC005A5B75 /* Posts.swift */; };
 		7562721329829E980086C0A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562721229829E980086C0A9 /* LoginView.swift */; };
 		756272152982A3B90086C0A9 /* WorkflowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272142982A3B90086C0A9 /* WorkflowsView.swift */; };
 		756272192982A6B70086C0A9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272182982A6B70086C0A9 /* UserDetailView.swift */; };
@@ -39,6 +45,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7528249829924C94005A5B75 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7528249B29925797005A5B75 /* BounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceAnimation.swift; sourceTree = "<group>"; };
+		752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePhotosView.swift; sourceTree = "<group>"; };
+		752824A92994E080005A5B75 /* PostFootPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFootPanel.swift; sourceTree = "<group>"; };
+		752824AB2994E2AC005A5B75 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		7562721229829E980086C0A9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		756272142982A3B90086C0A9 /* WorkflowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsView.swift; sourceTree = "<group>"; };
 		756272182982A6B70086C0A9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
@@ -56,6 +67,7 @@
 		7562727C298BD3BC0086C0A9 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7562727E298BD3D50086C0A9 /* UserPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		75627281298BF14E0086C0A9 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		756272D5298FEEFA0086C0A9 /* Wrappers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Wrappers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		756ACCCB29715F5700688FA7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		756ACCCD297160F700688FA7 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		756ACCCF297163D400688FA7 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -74,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75627279298BD29F0086C0A9 /* SwiftyJSON in Frameworks */,
+				75057AE229900C56001740F5 /* CodingStyleCased in Frameworks */,
 				7562722D2987C5DB0086C0A9 /* ASCollectionView in Frameworks */,
 				75627276298BD24D0086C0A9 /* Alamofire in Frameworks */,
 			);
@@ -82,9 +95,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7528249729924C80005A5B75 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				7528249829924C94005A5B75 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		7528249A2992577E005A5B75 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				7528249B29925797005A5B75 /* BounceAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		756272162982A5F00086C0A9 /* Workflows */ = {
 			isa = PBXGroup;
 			children = (
+				7528249A2992577E005A5B75 /* Animations */,
 				756272262987C1BE0086C0A9 /* News */,
 				756272252987C19E0086C0A9 /* Groups */,
 				756272202983EE430086C0A9 /* Settings */,
@@ -121,6 +151,7 @@
 			children = (
 				7562721E2983E71D0086C0A9 /* Users.swift */,
 				7562722E2987CD8E0086C0A9 /* Photos.swift */,
+				752824AB2994E2AC005A5B75 /* Posts.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -128,6 +159,7 @@
 		756272202983EE430086C0A9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				7528249729924C80005A5B75 /* ProfileView */,
 				756272212983EE540086C0A9 /* Settings.swift */,
 			);
 			path = Settings;
@@ -160,12 +192,28 @@
 			path = VK;
 			sourceTree = "<group>";
 		};
+		756272A4298FB8980086C0A9 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		756272A7298FB9720086C0A9 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
 		756ACCCA29715F2E00688FA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7562721229829E980086C0A9 /* LoginView.swift */,
 				756ACCCF297163D400688FA7 /* CircleImage.swift */,
 				756ACCD4297165F700688FA7 /* RecordCell.swift */,
+				752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */,
+				752824A92994E080005A5B75 /* PostFootPanel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +245,9 @@
 		758DBBA0296EC895006CEF43 /* SwiftUILessons */ = {
 			isa = PBXGroup;
 			children = (
+				756272D5298FEEFA0086C0A9 /* Wrappers.playground */,
+				756272A7298FB9720086C0A9 /* Playgrounds */,
+				756272A4298FB8980086C0A9 /* Wrappers */,
 				7562726D298BA8010086C0A9 /* VK */,
 				7562721D2983E7050086C0A9 /* DataSources */,
 				7562721A2983BF450086C0A9 /* Models */,
@@ -240,6 +291,7 @@
 				7562722C2987C5DB0086C0A9 /* ASCollectionView */,
 				75627275298BD24D0086C0A9 /* Alamofire */,
 				75627278298BD29F0086C0A9 /* SwiftyJSON */,
+				75057AE129900C56001740F5 /* CodingStyleCased */,
 			);
 			productName = SwiftUILessons;
 			productReference = 758DBB9E296EC895006CEF43 /* SwiftUILessons.app */;
@@ -273,6 +325,7 @@
 				7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
 				75627274298BD24D0086C0A9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				75627277298BD29F0086C0A9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */,
 			);
 			productRefGroup = 758DBB9F296EC895006CEF43 /* Products */;
 			projectDirPath = "";
@@ -325,13 +378,18 @@
 				756272222983EE540086C0A9 /* Settings.swift in Sources */,
 				756272282987C1D70086C0A9 /* NewsFeed.swift in Sources */,
 				7562726F298BA8010086C0A9 /* VKLoginWebView.swift in Sources */,
+				752824A82994DCE0005A5B75 /* MultiplePhotosView.swift in Sources */,
 				756ACCD3297164A500688FA7 /* CircleShadow.swift in Sources */,
 				758DBBA4296EC895006CEF43 /* ContentView.swift in Sources */,
+				752824AA2994E080005A5B75 /* PostFootPanel.swift in Sources */,
+				7528249929924C94005A5B75 /* ProfileView.swift in Sources */,
 				7562721F2983E71D0086C0A9 /* Users.swift in Sources */,
 				7562722A2987C2060086C0A9 /* GroupsList.swift in Sources */,
 				756ACCD5297165F700688FA7 /* RecordCell.swift in Sources */,
 				756272242983F21B0086C0A9 /* Group.swift in Sources */,
+				7528249C29925797005A5B75 /* BounceAnimation.swift in Sources */,
 				75627271298BABCA0086C0A9 /* Session.swift in Sources */,
+				752824AC2994E2AC005A5B75 /* Posts.swift in Sources */,
 				7562727B298BD2E10086C0A9 /* VKApi.swift in Sources */,
 				75627282298BF14E0086C0A9 /* UsersViewModel.swift in Sources */,
 				75627273298BD1CC0086C0A9 /* ApiDataService.swift in Sources */,
@@ -546,6 +604,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DarkHedgehog/CodingStyleCased.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
@@ -573,6 +639,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		75057AE129900C56001740F5 /* CodingStyleCased */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */;
+			productName = CodingStyleCased;
+		};
 		7562722C2987C5DB0086C0A9 /* ASCollectionView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */;

@@ -11,7 +11,9 @@ struct CircleImage: View {
     var name: String
     var diameter: CGFloat
     var body: some View {
-        Image("user")
+        Image(name)
+            .resizable()
+            .scaledToFit()
             .frame(width: diameter, height: diameter)
             .cornerRadius(diameter / 2)
             .modifier(CircleShadow(shadowColor: .gray, shadowRadius: 5))
@@ -20,6 +22,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage(name: "user", diameter: 80)
+        CircleImage(name: "DarkHedgehog", diameter: 80)
     }
 }

@@ -14,6 +14,7 @@ struct Settings: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack {
+                ProfileView(imageName: "DarkHedgehog", firstName: "Alex", lastName: "Punkov")
                 Button("Logout") {
                     isConfirmationLogout = true
                 }
