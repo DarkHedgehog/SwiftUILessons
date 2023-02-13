@@ -13,6 +13,10 @@
 		752824A82994DCE0005A5B75 /* MultiplePhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */; };
 		752824AA2994E080005A5B75 /* PostFootPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824A92994E080005A5B75 /* PostFootPanel.swift */; };
 		752824AC2994E2AC005A5B75 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824AB2994E2AC005A5B75 /* Posts.swift */; };
+		752824D5299A2D92005A5B75 /* MultipleImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824D4299A2D92005A5B75 /* MultipleImagesView.swift */; };
+		752824D7299A2D9C005A5B75 /* MultipleImagesViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824D6299A2D9C005A5B75 /* MultipleImagesViewDelegate.swift */; };
+		752824DA299A2F51005A5B75 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 752824D9299A2F51005A5B75 /* Kingfisher */; };
+		752824DC299A34B0005A5B75 /* MultipleImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752824DB299A34B0005A5B75 /* MultipleImages.swift */; };
 		7562721329829E980086C0A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562721229829E980086C0A9 /* LoginView.swift */; };
 		756272152982A3B90086C0A9 /* WorkflowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272142982A3B90086C0A9 /* WorkflowsView.swift */; };
 		756272192982A6B70086C0A9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756272182982A6B70086C0A9 /* UserDetailView.swift */; };
@@ -50,6 +54,9 @@
 		752824A72994DCE0005A5B75 /* MultiplePhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePhotosView.swift; sourceTree = "<group>"; };
 		752824A92994E080005A5B75 /* PostFootPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFootPanel.swift; sourceTree = "<group>"; };
 		752824AB2994E2AC005A5B75 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		752824D4299A2D92005A5B75 /* MultipleImagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleImagesView.swift; sourceTree = "<group>"; };
+		752824D6299A2D9C005A5B75 /* MultipleImagesViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleImagesViewDelegate.swift; sourceTree = "<group>"; };
+		752824DB299A34B0005A5B75 /* MultipleImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleImages.swift; sourceTree = "<group>"; };
 		7562721229829E980086C0A9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		756272142982A3B90086C0A9 /* WorkflowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowsView.swift; sourceTree = "<group>"; };
 		756272182982A6B70086C0A9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
@@ -89,6 +96,7 @@
 				75057AE229900C56001740F5 /* CodingStyleCased in Frameworks */,
 				7562722D2987C5DB0086C0A9 /* ASCollectionView in Frameworks */,
 				75627276298BD24D0086C0A9 /* Alamofire in Frameworks */,
+				752824DA299A2F51005A5B75 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +117,16 @@
 				7528249B29925797005A5B75 /* BounceAnimation.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		752824D3299A2D87005A5B75 /* MultipleImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				752824D6299A2D9C005A5B75 /* MultipleImagesViewDelegate.swift */,
+				752824D4299A2D92005A5B75 /* MultipleImagesView.swift */,
+				752824DB299A34B0005A5B75 /* MultipleImages.swift */,
+			);
+			path = MultipleImagesView;
 			sourceTree = "<group>";
 		};
 		756272162982A5F00086C0A9 /* Workflows */ = {
@@ -209,6 +227,7 @@
 		756ACCCA29715F2E00688FA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				752824D3299A2D87005A5B75 /* MultipleImagesView */,
 				7562721229829E980086C0A9 /* LoginView.swift */,
 				756ACCCF297163D400688FA7 /* CircleImage.swift */,
 				756ACCD4297165F700688FA7 /* RecordCell.swift */,
@@ -292,6 +311,7 @@
 				75627275298BD24D0086C0A9 /* Alamofire */,
 				75627278298BD29F0086C0A9 /* SwiftyJSON */,
 				75057AE129900C56001740F5 /* CodingStyleCased */,
+				752824D9299A2F51005A5B75 /* Kingfisher */,
 			);
 			productName = SwiftUILessons;
 			productReference = 758DBB9E296EC895006CEF43 /* SwiftUILessons.app */;
@@ -326,6 +346,7 @@
 				75627274298BD24D0086C0A9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				75627277298BD29F0086C0A9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */,
+				752824D8299A2F51005A5B75 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 758DBB9F296EC895006CEF43 /* Products */;
 			projectDirPath = "";
@@ -386,7 +407,9 @@
 				7562721F2983E71D0086C0A9 /* Users.swift in Sources */,
 				7562722A2987C2060086C0A9 /* GroupsList.swift in Sources */,
 				756ACCD5297165F700688FA7 /* RecordCell.swift in Sources */,
+				752824D7299A2D9C005A5B75 /* MultipleImagesViewDelegate.swift in Sources */,
 				756272242983F21B0086C0A9 /* Group.swift in Sources */,
+				752824D5299A2D92005A5B75 /* MultipleImagesView.swift in Sources */,
 				7528249C29925797005A5B75 /* BounceAnimation.swift in Sources */,
 				75627271298BABCA0086C0A9 /* Session.swift in Sources */,
 				752824AC2994E2AC005A5B75 /* Posts.swift in Sources */,
@@ -394,6 +417,7 @@
 				75627282298BF14E0086C0A9 /* UsersViewModel.swift in Sources */,
 				75627273298BD1CC0086C0A9 /* ApiDataService.swift in Sources */,
 				758DBBA2296EC895006CEF43 /* SwiftUILessonsApp.swift in Sources */,
+				752824DC299A34B0005A5B75 /* MultipleImages.swift in Sources */,
 				756ACCCC29715F5700688FA7 /* UserCell.swift in Sources */,
 				7562722F2987CD8E0086C0A9 /* Photos.swift in Sources */,
 				7562721329829E980086C0A9 /* LoginView.swift in Sources */,
@@ -612,6 +636,14 @@
 				kind = branch;
 			};
 		};
+		752824D8299A2F51005A5B75 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		7562722B2987C5DB0086C0A9 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
@@ -643,6 +675,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 75057AE029900C56001740F5 /* XCRemoteSwiftPackageReference "CodingStyleCased" */;
 			productName = CodingStyleCased;
+		};
+		752824D9299A2F51005A5B75 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 752824D8299A2F51005A5B75 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		7562722C2987C5DB0086C0A9 /* ASCollectionView */ = {
 			isa = XCSwiftPackageProductDependency;

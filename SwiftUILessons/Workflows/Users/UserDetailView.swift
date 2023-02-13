@@ -19,7 +19,10 @@ struct UserDetailView: View {
             ASCollectionView(data: posts) { post, _ in
                 VStack {
                     Text(post.text)
-                    MultiplePhotosView(photosUrl: post.imageUrls)
+//                    MultiplePhotosView(photosUrl: post.imageUrls)
+                    MultipleImages(imageUrls: post.imageUrls)
+//                        .frame(width: 100, height: 100)
+                        .frame(minWidth: 100, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
                     PostFootPanel(post: post)
                 }
             }.layout {
@@ -30,7 +33,7 @@ struct UserDetailView: View {
             }
         }.onAppear() {
             ApiDataService.instance.getFriendPosts(userId: user.id) { posts in
-                self.posts = posts ?? []
+//                self.posts = posts ?? []
             }
         }
     }
@@ -38,6 +41,6 @@ struct UserDetailView: View {
 
 struct UserDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        UserDetailView(user: usersDataSource[0])
+        UserDetailView(user: usersDataSource[0], posts: postsDataSource)
     }
 }
