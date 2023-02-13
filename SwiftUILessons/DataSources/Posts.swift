@@ -14,7 +14,7 @@ let postsDataSource = [
         date: 0,
         text: "test post text",
         imageUrls: [
-            "https://fotointeres.ru/wp-content/uploads/2012/04/0_82801_eaf23dcf_orig.jpg"
+            "https://fotointeres.ru/wp-content/uploads/2012/04/0_82801_eaf23dcf_orig.jpg"            
         ],
         likeCount: 0,
         isLiked: false)

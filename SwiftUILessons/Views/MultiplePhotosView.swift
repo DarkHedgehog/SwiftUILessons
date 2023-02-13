@@ -18,7 +18,8 @@ struct MultiplePhotosView: View {
             } placeholder: {
                 ProgressView()
             }
-            .frame(width: .infinity, height: 150)
+            .frame(minWidth: 100, maxWidth: .infinity, minHeight: 100, maxHeight: 100)
+//            .frame(width: .infinity, height: 150)
             .background(Color.gray)
             .cornerRadius(5)
         }
